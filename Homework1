@@ -32,3 +32,41 @@ public class Main {
 
 //3//
 
+public class Main {
+    public static void main(String[] args) {
+        printCol();
+    }
+    public static void printCol() {
+        int value = 150;
+        if (value <= 0) {
+            System.out.println("Красный");
+        }
+        if (value > 0 && value <= 100) {
+            System.out.println("Желтый");
+        }
+        if (value > 100) {
+            System.out.println("Зеленый");
+        }
+    }
+}
+
+//4//
+
+public class Main {
+    public static void main(String[] args) {
+        compareNumbers();
+    }
+    public static void compareNumbers() {
+        int a = 25;
+        int b = 30;
+        if  (a >= b) {
+            System.out.println("a >= b");
+        } else {
+            System.out.println("a < b");
+        }
+    }
+
+}
+
+//5//
+
