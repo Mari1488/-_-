@@ -1,0 +1,70 @@
+//1-2//
+
+public class Сотрудник {
+    private String ФИО;
+    private String Должность;
+    private String email;
+    private String Телефон;
+    private String Зарплата;
+    private String Возраст;
+
+    public Сотрудник(String ФИО, String Должность, String email, String Телефон, String Зарплата, String Возраст) {
+        this.ФИО = ФИО;
+        this.Должность = Должность;
+        this.email = email;
+        this.Телефон = Телефон;
+        this.Зарплата = Зарплата;
+        this.Возраст = Возраст;
+    }
+
+    public void info() {
+        System.out.println("ФИО: " + ФИО);
+        System.out.println("Должность: " + Должность);
+        System.out.println("email: " + email);
+        System.out.println("Телефон: " + Телефон);
+        System.out.println("Зарплата: " + Зарплата);
+        System.out.println("Возраст: " + Возраст);
+
+        Сотрудник[] Array1 = new Сотрудник[5];
+
+        Array1[0] = new Сотрудник("Иванова Алла Павловна", "Бухгалтер", "Ivana69@gmail.com", "+79033294867", "60000", "55");
+        Array1[1] = new Сотрудник("Попова Инга Львовна", "Директор", "PopovaaI@gmail.com", "+79616407950", "100000", "49");
+        Array1[2] = new Сотрудник("Сидоров Олег Петрович", "Инженер", "Sidoroff09@gmail.com", "+79018075193", "45000", "46");
+        Array1[3] = new Сотрудник("Макарова Регина Алексеевна", "Делопроизводитель", "RegMakar008@gmail.com", "+79627238854", "30000", "22");
+        Array1[4] = new Сотрудник("Любимова Наталья Федоровна", "Уборщица", "lubaaan58@gmail.com", "+79586417950", "20000", "68");
+    }
+}
+
+//3//
+
+public class Park {
+    public static class Attractions {
+        private String name;
+        private String time;
+        private double cost;
+
+        public Attractions(String name, String time, double cost) {
+            this.name = name;
+            this.time = time;
+            this.cost = cost;
+        }
+        public String getName() {
+            return name;
+        }
+        public void setName() {
+            this.name = name;
+        }
+        public String getTime() {
+            return time;
+        }
+        public void setTime() {
+            this.time = time;
+        }
+        public double getCost() {
+            return cost;
+        }
+        public void setCost(double cost) {
+            this.cost = cost;
+        }
+    }
+}
